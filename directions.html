@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAVA restaurant</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Set the size of the map */
+        #map {
+          height: 400px;
+          width: 100%;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Product</a></li>
+          <li><a href="./directions.html">Directions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <img src="/image/logo cava.png" width="150" height="100">
+    </header>
+
+    <!-- Map container -->
+    <div id="map"></div>
+    <!-- Script to load Google Maps API and display directions -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      // Initialize and display the map
+      function initMap() {
+        // Set the starting and ending points
+        var start = "San Francisco, CA";
+        var end = "Los Angeles, CA";
+        // Create a new map object
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 7,
+          center: { lat: 37.7749, lng: -122.4194 },
+        });
+        // Create a new directions service object
+        var directionsService = newgoogle.maps.DirectionsService();
+        // Create a new directions renderer object
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map,
+        });
+        // Create a request for the directions
+        var request = {
+          origin: start,
+          destination: end,
+          travelMode: "DRIVING",
+        };
+        // Send the request to the directions service
+        directionsService.route(request, function (result, status) {
+          if (status == "OK") {
+            // Display the directions on the map
+            directionsDisplay.setDirections(result);
+          }
+        });
+      }
+    </script>
+    </body>
+    </html>

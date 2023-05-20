@@ -1,0 +1,363 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e55b00;
+  }
+  
+  h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    color: #e55b00;
+  }
+  
+  /* Main Styles */
+  
+  .hero {
+    background-image: url(../image/bk.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ff7400;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  
+  .btn {
+    background-color: #ff7400;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55b00;
+  }
+  
+  .featured-items {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .featured-items h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .item {
+    margin-bottom: 50px;
+  }
+  
+  .item img {
+    border-radius: 5px;
+  }
+  
+  .item h3 {
+    font-size: 24px;
+  }
+
+  .item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    
+    .item .price {
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+    /* About Section Styles */
+
+.about {
+    background-color: #f6f6f6;
+    padding: 100px 0;
+    }
+    
+    .about h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    }
+    
+    .about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 800px;
+    }
+    .about img {
+        border-radius: 5px;
+        margin-bottom: 50px;
+        }
+        
+        /* Testimonials Section Styles */
+        
+        .testimonials {
+        background-color: #ffffff;
+        padding: 100px 0;
+        }
+        
+        .testimonials h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+        text-align: center;
+        }
+
+.testimonial {
+    margin-bottom: 50px;
+    }
+    
+    .testimonial p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    }
+    
+    .testimonial .author {
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+/* Contact Section Styles */
+
+.contact {
+    background-color: #ff7400;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    }
+    
+    .contact h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    }
+    .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    
+    .contact label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+    .contact input,
+    .contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    .contact input:focus,
+    .contact textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #ffffff;
+    }
+    .contact button {
+    background-color: #ffffff;
+    color: #ff7400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease;
+    }
+    
+    .contact button:hover {
+    background-color: #f6f6f6;
+    }
+    
+    /* Social Icons Styles */
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    }
+    
+    .social-icons a {
+    font-size: 24px;
+    margin-right: 20px;
+    }
+    
+    .social-icons a:last-child {
+    margin-right: 0;
+    }
+    
+    /* Footer Styles */
+    footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    }
+    
+    .footer-logo {
+    margin-bottom: 20px;
+    }
+    
+    .footer-nav {
+    margin-bottom: 20px;
+    }
+    
+    .footer-nav a {
+    font-size: 16px;
+    margin-right: 20px;
+    }
+    
+    .footer-nav a:last-child {
+    margin-right: 0;
+    }
+    
+    .footer-nav a:hover {
+    color: #ff7400;
+    }
+    
+    .footer-text {
+    margin-bottom: 20px;
+    }
+    
+    .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    
+    .footer-social-icons a {
+    font-size: 24px;
+    margin-right: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    th {
+      background-color: #dddddd;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+
+
+    .show-item {
+      display: inline-block;
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      vertical-align: top;
+     }
+     
+     .show-item img {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+      height: 50%;
+     }
+     
+     .show-item h3 {
+      margin-top: 10px;
+     }
+     
+     .show-item p {
+      margin: 10px 0;
+     }
+     
+     .show-item ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+     }
+     
+     .show-item li {
+      margin-bottom: 5px;
+     }
+
+     .btn-buy {
+      display: block;
+      background-color:#f44336;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+     }
+     
+     .btn-buy:hover {
+      transition: background-color 0.3s ease;
+     }
